@@ -30,7 +30,7 @@ void showDetails(const Student& s) {
 int main() {
     Student s1("Ayush", 85);
     Student s2("Rohit", 90);
-    Student s3("Vansh", 75);
+    Student s3("Dhruv", 75);
 
     showDetails(s1);
     showDetails(s2);
