@@ -8,12 +8,14 @@ class Student {
 
 public:
     void input() {
+        cout << "Enter roll number, name, and marks: ";
         cin >> roll_no;
         cin >> name;
         cin >> marks;
     }
 
     void display() {
+        cout << "Student Details:" << endl;
         cout << roll_no << endl;
         cout << name << endl;
         cout << marks << endl;
