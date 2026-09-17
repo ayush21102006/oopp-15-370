@@ -8,12 +8,16 @@ class comp{
     public:
     comp(int r=0 ,int i=0):real{r},img{i}{}
 
-    comp operator +(comp c)
-    {
-        int r = this->real + c.real;
-        int i = this->img + c.img ;
-        comp t(r,i);
-        return t;
+    // comp operator +(comp c)
+    // {
+    //     int r = this->real + c.real;
+    //     int i = this->img + c.img ;
+    //     comp t(r,i);
+    //     return t;
+    // }
+
+    comp operator +(comp c){
+        return comp(real + c.real , img + c.img);
     }
 
     void show(){
@@ -27,7 +31,6 @@ int main(){
     c1.show();
     c2.show();
     comp c3 = c1 + c2;
-    // cout<<c3;
     c3.show();
 
 return 0;
