@@ -16,14 +16,21 @@ class comp{
     //     return t;
     // }
 
-    comp operator +(comp c){
-        return comp(real + c.real , img + c.img);
-    }
+    // comp operator +(comp c){
+    //     return comp(real + c.real , img + c.img);
+    // }
+
+    friend comp operator +(comp c , comp d);
 
     void show(){
         cout<<real<<" , "<<img<<endl;
     }
 };
+
+comp operator +(comp c , comp d){
+    return comp(c.real + d.real , c.img + d.img);
+}
+
 
 int main(){
     comp c1(5,20);
