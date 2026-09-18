@@ -8,14 +8,20 @@ class comp{
     public:
     comp(int r=0 ,int i=0):real{r},img{i}{}
 
-    comp operator -(){
-        return comp(-real , -img);
-    }
+    friend comp operator -(comp c);
+
+    // comp operator -(){
+    //     return comp(-real , -img);
+    // }
 
     void show(){
         cout<<real<<" , "<<img<<endl;
     }
 };
+
+comp operator -(comp c){
+    return comp(real - c.real ,img - c.img);
+}
 
 
 
