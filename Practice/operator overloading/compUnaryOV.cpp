@@ -20,7 +20,7 @@ class comp{
 };
 
 comp operator -(comp c){
-    return comp(real - c.real ,img - c.img);
+    return comp( -c.real , -c.img);
 }
 
 //in unary operator overloading no argument required for member function 
