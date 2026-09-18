@@ -23,6 +23,8 @@ comp operator -(comp c){
     return comp(real - c.real ,img - c.img);
 }
 
+//in unary operator overloading no argument required for member function 
+//for friend function we require one agrument
 
 
 int main(){
