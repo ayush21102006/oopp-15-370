@@ -9,7 +9,6 @@ int addition(int a, int b = 10) {
     return a + b;
 }
 
-// Function overloading
 int multiply(int a, int b) {
     return a * b;
 }
