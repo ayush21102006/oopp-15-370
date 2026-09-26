@@ -1,30 +1,34 @@
-#include <iostream>
+#include<iostream>
+
 using namespace std;
-
-class Student{
-    string name;
-    int roll;
-    string branch;
-
-public:
-    Student(string n, int r, string b){
-        name = n;
-        roll = r;
-        branch = b;
+class point{
+    int x,y;
+    public:
+    void input(){
+        cout<<"Enter the value of x : ";
+        cin>>x;
+        cout<<"Enter the value of y : ";
+        cin>>y;
     }
-
     void show(){
-        cout << "\nName : " << name;
-        cout << "\nRoll : " << roll;
-        cout << "\nBranch : " << branch << endl;
+        cout<<"The value of x is : "<<x<<endl;
+        cout<<"The value of y is : "<<y<<endl;
+        cout<<endl;
+        cout<<endl;
     }
 };
 
-int main(){
-    Student s1("Ayush", 370, "CSE");
-    Student s2("Dhruv", 456, "CSE");
+int main()
+{
+    point p1, p2;
+    cout << "Point 1\n";
+    p1.input();
+    cout << "\nPoint 2\n";
+    p2.input();
 
-    s1.show();
-    s2.show();
+    cout << "\nPoint 1\n ";
+    p1.show();
+    cout << "Point 2\n";
+    p2.show();
 
 }
