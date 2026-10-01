@@ -7,7 +7,9 @@ class Emp{
     Emp(){
         cout<<"Employee constructor"<<endl;
     }
-   
+    ~Emp(){
+        cout<<"Emp destructor"<<endl;
+    }
 };
 
 class Man : public Emp{
@@ -15,7 +17,9 @@ class Man : public Emp{
     Man(){
         cout<<"Manager constructor"<<endl;
     }
-    
+    ~Man(){
+        cout<<"Man destructor"<<endl;
+    }
 };
 
 
@@ -23,6 +27,9 @@ class Family{
     public:
     Family(){
         cout<<"Family Constructor"<<endl;
+    }
+    ~Family(){
+        cout<<"Family destructor"<<endl;
     }
 };
 
