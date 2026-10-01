@@ -18,7 +18,7 @@ class Currency {
 };
 
 int main() {
-    Currency c=145.55;
+    Currency c=145.58;
     c.show();
     float amount = c;
     cout << "Amount in float: " << amount << endl;
